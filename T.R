@@ -1,5 +1,5 @@
-new <- read.csv("/Users/ctor/Development/upc/PE/proto/100U50000.csv", header=TRUE)
-attach(new)
+data <- read.csv("/path/to/csv", header=TRUE)
+attach(data)
 
 #definir models
 
@@ -77,6 +77,6 @@ plot(time, residuals(model),
      type = "o", pch = 20, col = "blue")
 abline(h = 0, col = "red", lwd = 2) # Add a horizontal reference line at zero
 
-detach(new)
+detach(data)
 
 
